@@ -54,7 +54,7 @@ async function submitRegister() {
   }
 
   // ⚠️ URL ỨNG DỤNG WEB CỦA BẠN (APPS SCRIPT):
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxCHDrXhDn9pnpG1IQsyxNEOrY0sTSX4ypS7IxEh7pZakvp4XounTHOhbQNW1Bfv4r1/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxaNScsdPbwaAQ-5sMl79Zwg7xaaXyhE8bW_mvewjNqOqLJUd6vx9kNnsF-C73FqmP6XQ/exec';
 
   const btn = document.querySelector('.form-submit');
   const originalBtnText = btn ? btn.innerHTML : 'Gửi đăng ký tư vấn miễn phí';
