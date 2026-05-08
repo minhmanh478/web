@@ -17,7 +17,7 @@
   <!-- ===== NAV ===== -->
   <nav id="navbar">
     <div class="nav-logo" onclick="goPage('home')">
-      <img src="assets/logo_web/3.png" alt="Deuzy" style="height: 300px; width: auto; object-fit: contain;">
+      <img src="assets/logo_web/chinh.png" alt="Deuzy" style="height: 200px; width: auto; object-fit: contain;">
     </div>
     <ul class="nav-links">
       <li><a onclick="goPage('home')" data-page="home">Trang chủ</a></li>
@@ -43,59 +43,49 @@
   <!-- ===================== HOME ===================== -->
   <div class="page active pt-nav" id="page-home">
 
-    <section class="hero">
-      <div class="hero-inner container">
-        <div class="hero-content">
-          <div class="hero-badge" style="margin-bottom: 20px;">
-            <span class="hero-badge-icon">🇩🇪</span>
-            <span>Trung tâm tiếng Đức chuyên nghiệp</span>
-          </div>
-          <h1 style="margin: 0 0 16px 0; line-height: 0;">
-            <img src="assets/logo_web/3.1.png" alt="Deuzy - Deutsch Made Easy"
-              style="max-width: 100%; height: auto; max-height: 100px;">
+    <section class="hero-new">
+      <!-- Background and decorations -->
+      <div class="hero-new-bg" style="background-image: url('assets/backgroud/backgroup.jpg');"></div>
+
+      <div class="hero-new-inner">
+        <!-- Cột trái: Text và Logo -->
+        <div class="hero-new-left">
+          <h1 class="hero-logo-large">
+            <span class="hero-brand">Deuzy</span><br>
+            <span class="hero-brand-sub">Deutsch made easy</span>
           </h1>
-          <p class="hero-slogan">Tinh giản việc học – Tối đa kết quả.</p>
-          <p class="hero-sub" style="margin-top: 12px;">Tiếng Đức không khó – nếu bạn đi <strong>đúng hướng ngay từ
-              đầu!</strong> Deuzy xây dựng
-            môi trường học dễ hiểu, dễ theo và không áp lực, giúp bạn tự tin hội nhập quốc tế.</p>
-          <div class="hero-buttons">
-            <button class="btn-primary" onclick="goPage('register')">Đăng ký tư vấn miễn phí</button>
-            <button class="btn-outline" onclick="goPage('courses')">Xem khóa học</button>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-num">6+</div>
-              <div class="stat-label">Khóa học đa dạng</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">1:1</div>
-              <div class="stat-label">Tutor cá nhân</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">A1→B2</div>
-              <div class="stat-label">Lộ trình đầy đủ</div>
-            </div>
+          <p class="hero-desc">
+            Chào bạn, mình là Linh.<br>
+            Hành trình của mình với tiếng Đức bắt đầu từ niềm yêu thích ngôn ngữ và sự tò mò về một nền văn hóa kỷ luật,
+            sâu sắc. Nhờ sự kiên trì theo đuổi, mình đã tốt nghiệp cử nhân bằng kép (Medienwissenschaft & English
+            Studies) loại giỏi tại Universität zu Köln – một trong những trường đại học uy tín tại Đức.
+          </p>
+          <div class="hero-circles">
+            <span></span><span></span><span></span><span></span>
           </div>
         </div>
-        <div class="hero-visual">
-          <div style="position:relative; max-width:1200px; margin:0 auto;">
-            <div class="hero-card">
-              <div class="hero-card-header">
-                <img src="assets/anh_khanh_linh/khanh_linh.jpg" alt="Khánh Linh" class="hero-avatar"
-                  style="object-fit:cover; background:none;">
-                <div>
-                  <div class="hero-card-name">Khánh Linh</div>
-                  <div class="hero-card-role">Founder – Universität zu Köln</div>
-                </div>
-              </div>
-              <p class="hero-card-story">Chào bạn, mình là Khánh Linh. Mình tốt nghiệp bằng kép tại Universität zu Köln
-                (Đức) và vinh dự nhận học bổng DAAD. Với kinh nghiệm học tập thực tế cùng chứng chỉ Sư phạm Goethe, mình
-                hiểu rõ những khó khăn mà học viên Việt Nam thường gặp phải. Deuzy ra đời với sứ mệnh mang đến một lộ
-                trình học tinh gọn, thực tế và hiệu quả. Mục tiêu của chúng mình là giúp hành trình chinh phục tiếng Đức
-                và giấc mơ du học của bạn trở nên <em>ngắn gọn và rõ ràng nhất có thể.</em></p>
-              <button class="btn-primary" style="font-size:13px;padding:10px 20px;" onclick="goPage('about')">Tìm hiểu
-                về Deuzy →</button>
-            </div>
+
+        <!-- Cột phải: Hình ảnh, quả cầu và các thẻ nổi -->
+        <div class="hero-new-right">
+          <!-- Quả cầu -->
+          <img src="assets/backgroud/qua_cau.jpg" alt="Globe" class="hero-globe-img">
+
+          <!-- Chân dung -->
+          <img src="assets/anh_khanh_linh/khanh_linh_png.png" alt="Khánh Linh" class="hero-portrait">
+
+          <!-- Thẻ tên nổi -->
+          <div class="hero-badge-float">
+            <strong>Khánh Linh</strong><br>
+            <span>Founder - univercitavt</span>
+          </div>
+
+          <!-- Thẻ giới thiệu nổi -->
+          <div class="hero-card-float">
+            <p>Chào bạn, mình là Linh.<br>Hành trình của mình với tiếng Đức bắt đầu từ niềm yêu thích ngôn ngữ và sự tò
+              mò về một nền văn hóa kỷ luật, sâu sắc. Nhờ sự kiên trì theo đuổi, mình đã tốt nghiệp cử nhân bằng kép
+              (Medienwissenschaft & English Studies) loại giỏi tại Universität zu Köln – một trong những trường đại học
+              uy tín tại Đức.</p>
+            <button class="btn-more">🖱 TÌM HIỂU THÊM</button>
           </div>
         </div>
       </div>
@@ -105,7 +95,7 @@
     <section style="background:var(--gray-50);">
       <div class="container">
         <div class="section-header">
-          <div class="section-label">📚 Khóa học</div>
+          
           <h2 class="section-title">KHÓA HỌC <span>TIẾNG ĐỨC</span></h2>
           <p class="section-sub">Lộ trình A1 → B2 bài bản, 40–50 buổi mỗi cấp độ. Học online linh hoạt, có thể theo dõi
             kỳ thi Goethe/TELC.</p>
@@ -121,7 +111,7 @@
             <div class="cc-name">Sơ cấp</div>
             <div class="cc-desc">40 buổi · 2–3 tháng</div>
           </div>
-          <div class="course-card featured" onclick="goPage('courses')">
+          <div class="course-card" onclick="goPage('courses')">
             <div class="cc-level">B1</div>
             <div class="cc-name">Trung cấp</div>
             <div class="cc-desc">40 buổi · 2–3 tháng</div>
@@ -131,17 +121,15 @@
             <div class="cc-name">Khá</div>
             <div class="cc-desc">50 buổi · 3 tháng</div>
           </div>
-          <div class="course-card" style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-color:#f59e0b;"
-            onclick="goPage('courses')">
-            <div class="cc-level" style="color:#78350f;">Ôn<br>thi</div>
-            <div class="cc-name" style="color:#78350f;">B1 Goethe/TELC</div>
-            <div class="cc-desc" style="color:#92400e;">Tập trung kỳ thi</div>
+          <div class="course-card" onclick="goPage('courses')">
+            <div class="cc-level">Ôn<br>thi</div>
+            <div class="cc-name">B1 Goethe/TELC</div>
+            <div class="cc-desc">Tập trung kỳ thi</div>
           </div>
-          <div class="course-card" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border-color:#a78bfa;"
-            onclick="goPage('courses')">
-            <div class="cc-level" style="color:#6d28d9;font-size:22px;padding-top:4px;">1:1</div>
-            <div class="cc-name" style="color:#6d28d9;">Tutor cá nhân</div>
-            <div class="cc-desc" style="color:#7c3aed;">Theo yêu cầu</div>
+          <div class="course-card" onclick="goPage('courses')">
+            <div class="cc-level" style="font-size:22px;padding-top:4px;">1:1</div>
+            <div class="cc-name">Tutor cá nhân</div>
+            <div class="cc-desc">Theo yêu cầu</div>
           </div>
         </div>
         <div style="text-align:center;margin-top:36px;">
@@ -199,9 +187,9 @@
             <p class="testi-text">"Từ khi học tại Deuzy, mình mới thực sự hiểu ngữ pháp tiếng Đức một cách có hệ thống.
               Chị Linh giải thích rất dễ hiểu, không bao giờ cảm thấy bị bỏ lại!"</p>
             <div class="testi-author">
-              <div class="tav av1">M</div>
+              <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-1/491924549_1183614206476982_1175671270079321138_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFC7jMNkWHUGI-QwB8vK3bP-cp4b1MV3PH5ynhvUxXc8eYIx-E6OfsGMCjm09POpHkcyZpcpR0sJSVOOWqdcrPr&_nc_ohc=WauNfx4Za4cQ7kNvwHPeeCV&_nc_oc=AdrE8M-tguYxNaq5mmEc1R8Zy2hMS-aZau4ciyU29oSWFiLuvsK3ZPVvs5Cyxn-IswY&_nc_zt=24&_nc_ht=scontent.fhan17-1.fna&_nc_gid=866L_gGldiA62t-RiVNBgw&_nc_ss=7b2a8&oh=00_Af61VM4felMoo0BKNHNSMvEJ3DDDqk3yR2mQOGLSqnZ8SQ&oe=6A039A42" alt="Minh Mạnh" class="tav" style="object-fit:cover; background:none;">
               <div>
-                <div class="tav-name">Minh Anh</div>
+                <div class="tav-name">Minh Mạnh</div>
                 <div class="tav-info">Học viên khóa B1</div>
               </div>
             </div>
@@ -213,7 +201,7 @@
             <div class="testi-author">
               <div class="tav av3">T</div>
               <div>
-                <div class="tav-name">Thanh Hà</div>
+                <div class="tav-name">Công Nhật</div>
                 <div class="tav-info">Đang Ausbildung tại Đức</div>
               </div>
             </div>
@@ -1172,7 +1160,7 @@
       </div>
       <hr class="footer-hr">
       <div class="footer-bottom">
-        <div>© 2024 Deuzy – Deutsch Made Easy. Tất cả quyền được bảo lưu.</div>
+        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
         <div class="footer-socials">
           <div class="social-btn">f</div>
           <div class="social-btn">▶</div>
