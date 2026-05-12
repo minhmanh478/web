@@ -205,12 +205,7 @@ nav {
 
 /* ===== PAGE ===== */
 .page {
-  display: none;
   animation: pageIn .4s ease both;
-}
-
-.page.active {
-  display: block;
 }
 
 @keyframes pageIn {
@@ -535,7 +530,7 @@ section {
 }
 .hero-brand-sub {
   font-size: clamp(20px, 3vw, 36px);
-  color: #4a6dcd;
+  color: (--gray-600);
   font-weight: 700;
 }
 
@@ -1059,7 +1054,7 @@ section {
   font-family: var(--font-heading);
   font-weight: 900;
   font-size: 42px;
-  color: #eff6ff;
+  color: #26314c;
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -1502,7 +1497,7 @@ footer {
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1593,12 +1588,20 @@ footer {
     margin-bottom: 40px;
   }
   .hero-new-right {
-    min-height: 600px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .hero-portrait {
-    height: 400px;
-    right: -10px;
-    bottom: -40px;
+    position: relative;
+    height: 380px;
+    right: auto;
+    bottom: auto;
+    z-index: 3;
+    margin-bottom: -40px;
   }
   .hero-card-float {
     position: relative;
@@ -1606,16 +1609,23 @@ footer {
     left: auto;
     bottom: auto;
     width: 100%;
-    margin-top: 300px; /* đẩy xuống dưới chân dung */
+    margin-top: 0;
+    padding-top: 60px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    z-index: 2;
   }
   .hero-badge-float {
-    top: 50px;
+    position: relative;
+    top: auto;
     right: auto;
-    left: 10px;
+    left: auto;
+    z-index: 4;
+    margin-bottom: -30px;
+    align-self: flex-start;
+    margin-left: 10px;
   }
   .hero-globe-img {
-    width: 250px;
+    width: 280px;
     left: -20px;
     top: -20px;
   }

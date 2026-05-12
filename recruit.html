@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuzy – Deutsch Made Easy</title>
+  <link rel="icon" href="assets/logo_web/logo_no_name.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo_web/chinh.png" alt="Deuzy" style="height: 200px; width: auto; object-fit: contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="courses.html">Khóa học</a></li>
+      <li><a href="germany.html">Du học Đức</a></li>
+      <li><a href="recruit.html" class="active">Tuyển dụng</a></li>
+      <li><a href="register.html" class="nav-cta">Đăng ký</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav-overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">🏠 Trang chủ</a>
+    <a href="about.html" onclick="toggleMenu()">👩‍🏫 Giới thiệu</a>
+    <a href="courses.html" onclick="toggleMenu()">📚 Khóa học</a>
+    <a href="germany.html" onclick="toggleMenu()">🇩🇪 Du học Đức</a>
+    <a href="recruit.html" class="active" onclick="toggleMenu()">💼 Tuyển dụng</a>
+    <a href="register.html" onclick="toggleMenu()" class="mobile-nav-cta">🚀 Đăng ký tư vấn</a>
+  </div>
+
+<div class="page pt-nav" id="page-recruit">
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><span onclick="window.location.href='index.html'">Trang chủ</span> / Tuyển dụng</div>
+        <h1
+          style="font-family:var(--font-heading);font-weight:900;font-size:clamp(26px,5vw,50px);color:var(--blue-dark);margin-bottom:12px;">
+          Gia nhập <span style="color:var(--blue);">đội ngũ Deuzy</span></h1>
+        <p style="font-size:16px;color:var(--gray-600);max-width:600px;line-height:1.7;">Mỗi ngày làm việc tại Deuzy
+          không chỉ là hoàn thành nhiệm vụ, mà là góp phần giúp một ai đó tiến gần hơn tới ước mơ của họ.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Gia nhập Deuzy – <span>bạn nhận được gì?</span></h2>
+          <p class="section-sub">Nếu bạn muốn một công việc có ý nghĩa, có tốc độ phát triển nhanh và được ghi nhận xứng
+            đáng – đây là nơi dành cho bạn.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:52px;">
+          <div class="recruit-benefit">
+            <div class="recruit-benefit-icon">💼</div>
+            <div class="recruit-benefit-title">Công việc ổn định</div>
+            <div class="recruit-benefit-desc">Một công việc ổn định nhưng không nhàm chán. Mỗi ngày đều có ý nghĩa và
+              tạo ra giá trị thật cho người học.</div>
+          </div>
+          <div class="recruit-benefit">
+            <div class="recruit-benefit-icon">📈</div>
+            <div class="recruit-benefit-title">Cơ hội học hỏi</div>
+            <div class="recruit-benefit-desc">Cơ hội học hỏi thực tế trong môi trường giáo dục hiện đại, tiếp xúc với
+              phương pháp giảng dạy tiên tiến.</div>
+          </div>
+          <div class="recruit-benefit">
+            <div class="recruit-benefit-icon">💰</div>
+            <div class="recruit-benefit-title">Thu nhập rõ ràng</div>
+            <div class="recruit-benefit-desc">Thu nhập rõ ràng, tăng theo năng lực. Không mơ hồ – bạn làm tốt, bạn được
+              ghi nhận xứng đáng.</div>
+          </div>
+          <div class="recruit-benefit">
+            <div class="recruit-benefit-icon">🤝</div>
+            <div class="recruit-benefit-title">Đội ngũ trẻ thẳng thắn</div>
+            <div class="recruit-benefit-desc">Đội ngũ trẻ, thẳng thắn, làm thật – không hình thức. Môi trường làm việc
+              thoải mái, cởi mở.</div>
+          </div>
+        </div>
+
+        <div
+          style="background:linear-gradient(135deg,#eff6ff,#f5f3ff);border-radius:var(--radius-lg);padding:44px;text-align:center;">
+          <h2
+            style="font-family:var(--font-heading);font-weight:900;font-size:28px;color:var(--blue-dark);margin-bottom:14px;">
+            Bạn có muốn công việc tạo ra giá trị thật? 🌟</h2>
+          <p style="font-size:15px;color:var(--gray-600);max-width:560px;margin:0 auto 28px;line-height:1.75;">Deuzy
+            đang tìm kiếm những người có đam mê với tiếng Đức và giáo dục, muốn đồng hành cùng học viên trên hành trình
+            chinh phục ngôn ngữ và ước mơ.</p>
+          <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+            <button class="btn-primary" onclick="window.location.href='register.html'">Gửi CV ứng tuyển</button>
+            <button class="btn-outline">Xem vị trí tuyển dụng</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== REGISTER ===================== -->
+  
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/logo_web/chinh1.png" alt="Deuzy Logo"
+            style="height: 35px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);">
+          <div class="footer-brand-desc">Tinh giản việc học – Tối đa kết quả. Deuzy đồng hành cùng bạn trên hành trình
+            chinh phục tiếng Đức và ước mơ.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 info@deuzy.vn<br>🏠 Việt Nam</div>
+        </div>
+        <div class="footer-col">
+          <h4>Khóa học</h4>
+          <ul>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Ôn thi Goethe/TELC</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tutor 1:1</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a onclick="window.location.href='germany.html'">Du học đại học</a></li>
+            <li><a onclick="window.location.href='germany.html'">Du học nghề</a></li>
+            <li><a onclick="window.location.href='germany.html'">Tư vấn visa</a></li>
+            <li><a onclick="window.location.href='register.html'">Tư vấn miễn phí</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a onclick="window.location.href='about.html'">Về Deuzy</a></li>
+            <li><a onclick="window.location.href='about.html'">Founder Khánh Linh</a></li>
+            <li><a onclick="window.location.href='recruit.html'">Tuyển dụng</a></li>
+            <li><a onclick="window.location.href='register.html'">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-bottom">
+        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
+        <div class="footer-socials">
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/youtobe.png" alt="YouTube" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 16px; height: 16px; object-fit: contain; "></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-box">
+      <div class="success-icon">🎉</div>
+      <div class="success-title">Đăng ký thành công!</div>
+      <p class="success-text">Cảm ơn bạn đã tin tưởng Deuzy! Tư vấn viên sẽ liên hệ với bạn trong vòng <strong>24
+          giờ</strong>.</p>
+      <button class="btn-primary" onclick="document.getElementById('success-modal').classList.remove('open')">Tuyệt vời!
+        →</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

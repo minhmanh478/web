@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuzy – Deutsch Made Easy</title>
+  <link rel="icon" href="assets/logo_web/logo_no_name.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo_web/chinh.png" alt="Deuzy" style="height: 200px; width: auto; object-fit: contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="courses.html" class="active">Khóa học</a></li>
+      <li><a href="germany.html">Du học Đức</a></li>
+      <li><a href="recruit.html">Tuyển dụng</a></li>
+      <li><a href="register.html" class="nav-cta">Đăng ký</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav-overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">🏠 Trang chủ</a>
+    <a href="about.html" onclick="toggleMenu()">👩‍🏫 Giới thiệu</a>
+    <a href="courses.html" class="active" onclick="toggleMenu()">📚 Khóa học</a>
+    <a href="germany.html" onclick="toggleMenu()">🇩🇪 Du học Đức</a>
+    <a href="recruit.html" onclick="toggleMenu()">💼 Tuyển dụng</a>
+    <a href="register.html" onclick="toggleMenu()" class="mobile-nav-cta">🚀 Đăng ký tư vấn</a>
+  </div>
+
+<div class="page pt-nav" id="page-courses">
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><span onclick="window.location.href='index.html'">Trang chủ</span> / Khóa học</div>
+        <h1
+          style="font-family:var(--font-heading);font-weight:900;font-size:clamp(26px,5vw,50px);color:var(--blue-dark);margin-bottom:12px;">
+          Khóa học <span style="color:var(--blue);">tại Deuzy</span></h1>
+        <p style="font-size:16px;color:var(--gray-600);max-width:580px;line-height:1.7;margin-bottom:26px;">Lộ trình A1
+          → B2 bài bản, 40–50 buổi mỗi cấp. Kèm khóa ôn thi Goethe/TELC B1 và Tutor 1:1 theo yêu cầu.</p>
+        <button class="btn-primary" onclick="window.location.href='register.html'">Đăng ký học ngay</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+
+        <!-- A1 -->
+        <div class="cdc">
+          <div class="cdc-header" style="background:linear-gradient(135deg,#eff6ff,#dbeafe);">
+            <div class="cdc-badge" style="background:linear-gradient(135deg,var(--blue),var(--blue-light));">A1</div>
+            <div>
+              <h3 style="font-family:var(--font-heading);font-weight:900;font-size:22px;color:var(--blue-dark);">Tiếng
+                Đức Nhập Môn A1</h3>
+              <p style="color:var(--gray-600);font-size:14px;margin-top:4px;">Dành cho người hoàn toàn chưa biết tiếng
+                Đức</p>
+              <div class="price-badge" style="margin-top:10px;">Lộ trình 40 buổi<small>2–3 tháng · Liên hệ để biết học
+                  phí</small></div>
+            </div>
+          </div>
+          <div class="cdc-body">
+            <div class="cdc-meta">
+              <div class="meta-chip">⏱️ 2–3 tháng</div>
+              <div class="meta-chip">📅 40 buổi</div>
+              <div class="meta-chip">🎯 Giao tiếp cơ bản</div>
+            </div>
+            <ul class="cdc-list">
+              <li>Làm quen bảng chữ cái và quy tắc phát âm chuẩn, đọc – viết từ cơ bản ngay từ đầu</li>
+              <li>Nắm nền tảng ngữ pháp: chia động từ thì hiện tại, đại từ nhân xưng, giống danh từ (der/die/das), cấu
+                trúc câu cơ bản</li>
+              <li>Học cách đặt câu hỏi, trả lời và sử dụng câu phủ định trong giao tiếp hàng ngày</li>
+              <li>Từ vựng theo chủ đề: giới thiệu bản thân, gia đình, công việc, thời gian, mua sắm, ăn uống…</li>
+              <li>Luyện nghe – nói song song trong từng buổi để hình thành phản xạ giao tiếp</li>
+              <li>Thực hành hội thoại theo tình huống thực tế – "biết" đi kèm với "dùng được"</li>
+            </ul>
+            <div class="cdc-goal">
+              <div class="cdc-goal-title">🎯 Mục tiêu đạt được</div>
+              <ul class="cdc-list" style="margin:0;">
+                <li>Đọc và phát âm cơ bản rõ ràng</li>
+                <li>Tự giới thiệu bản thân và đặt câu hỏi đơn giản</li>
+                <li>Giao tiếp trong các tình huống quen thuộc hàng ngày</li>
+              </ul>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;" onclick="window.location.href='register.html'">Đăng ký
+                A1</button>
+              <button class="btn-outline" style="font-size:13px;padding:8px 20px;" onclick="window.location.href='register.html'">Tư vấn
+                miễn phí</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- A2 -->
+        <div class="cdc">
+          <div class="cdc-header" style="background:linear-gradient(135deg,#ecfdf5,#d1fae5);">
+            <div class="cdc-badge" style="background:linear-gradient(135deg,#10b981,#34d399);">A2</div>
+            <div>
+              <h3 style="font-family:var(--font-heading);font-weight:900;font-size:22px;color:var(--blue-dark);">Tiếng
+                Đức Sơ Cấp A2</h3>
+              <p style="color:var(--gray-600);font-size:14px;margin-top:4px;">Giao tiếp tình huống thực tế, kể chuyện,
+                diễn đạt ý kiến</p>
+              <div class="price-badge" style="margin-top:10px;">Lộ trình 40 buổi<small>2–3 tháng · Liên hệ để biết học
+                  phí</small></div>
+            </div>
+          </div>
+          <div class="cdc-body">
+            <div class="cdc-meta">
+              <div class="meta-chip">⏱️ 2–3 tháng</div>
+              <div class="meta-chip">📅 40 buổi</div>
+              <div class="meta-chip">🎯 Giao tiếp tự nhiên hơn</div>
+            </div>
+            <ul class="cdc-list">
+              <li>Củng cố lại nền tảng A1 và mở rộng từ vựng theo các chủ đề thực tế trong cuộc sống</li>
+              <li>Các cấu trúc ngữ pháp nâng cao hơn: thì quá khứ, tương lai đơn, câu phụ, cách nối câu</li>
+              <li>Luyện giao tiếp trong các tình huống thường gặp như gọi điện, hỏi đường, mua sắm, ăn uống…</li>
+              <li>Rèn kỹ năng viết cơ bản, biết cách diễn đạt ý bằng câu rõ ràng và đầy đủ hơn</li>
+              <li>Tăng khả năng nghe hiểu và phản xạ khi hội thoại với tốc độ tự nhiên hơn</li>
+            </ul>
+            <div class="cdc-goal">
+              <div class="cdc-goal-title">🎯 Mục tiêu đạt được</div>
+              <ul class="cdc-list" style="margin:0;">
+                <li>Giao tiếp tương đối tự nhiên, duy trì hội thoại cơ bản</li>
+                <li>Diễn đạt ý kiến cá nhân bằng câu hoàn chỉnh và rõ ràng hơn</li>
+                <li>Tự tin xử lý các tình huống: hỏi thông tin, mua sắm, giao tiếp trong môi trường sống</li>
+              </ul>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;background:#10b981;"
+                onclick="window.location.href='register.html'">Đăng ký A2</button>
+              <button class="btn-outline" style="font-size:13px;padding:8px 20px;" onclick="window.location.href='register.html'">Tư vấn
+                miễn phí</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- B1 -->
+        <div class="cdc" style="position:relative;">
+          <div
+            style="position:absolute;top:16px;right:16px;background:var(--yellow);color:#78350f;padding:4px 12px;border-radius:8px;font-size:12px;font-weight:800;">
+            ⭐ PHỔ BIẾN NHẤT</div>
+          <div class="cdc-header" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">
+            <div class="cdc-badge" style="background:linear-gradient(135deg,var(--blue-dark),var(--blue));">B1</div>
+            <div>
+              <h3 style="font-family:var(--font-heading);font-weight:900;font-size:22px;color:var(--blue-dark);">Tiếng
+                Đức Trung Cấp B1</h3>
+              <p style="color:var(--gray-600);font-size:14px;margin-top:4px;">Giao tiếp trong môi trường học tập, công
+                việc và đời sống</p>
+              <div class="price-badge" style="margin-top:10px;">Lộ trình 40 buổi<small>2–3 tháng · Liên hệ để biết học
+                  phí</small></div>
+            </div>
+          </div>
+          <div class="cdc-body">
+            <div class="cdc-meta">
+              <div class="meta-chip">⏱️ 2–3 tháng</div>
+              <div class="meta-chip">📅 40 buổi</div>
+              <div class="meta-chip">🎯 Goethe/TELC B1</div>
+            </div>
+            <ul class="cdc-list">
+              <li>Mở rộng vốn từ vựng và nâng cao khả năng sử dụng ngôn ngữ trong nhiều tình huống thực tế</li>
+              <li>Làm quen với tiếng Đức trong môi trường học tập và công việc, mẫu giao tiếp cơ bản nơi công sở</li>
+              <li>Rèn kỹ năng viết: viết email, văn bản ngắn và các nội dung thường gặp trong đời sống</li>
+              <li>Luyện nghe – nói với các chủ đề đa dạng như sức khỏe, công việc, cuộc sống…</li>
+              <li>Học cách trình bày ý kiến cá nhân, trao đổi quan điểm và phản hồi trong hội thoại</li>
+              <li>Làm quen với các yếu tố văn hoá Đức, giúp sử dụng ngôn ngữ phù hợp ngữ cảnh</li>
+            </ul>
+            <div class="cdc-goal">
+              <div class="cdc-goal-title">🎯 Mục tiêu đạt được</div>
+              <ul class="cdc-list" style="margin:0;">
+                <li>Tham gia hội thoại, diễn đạt ý kiến và trao đổi thông tin một cách rõ ràng</li>
+                <li>Viết được email, đơn từ đơn giản (ví dụ: xin việc)</li>
+                <li>Tự tin giao tiếp trong môi trường học tập, công việc và đời sống hàng ngày</li>
+              </ul>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;" onclick="window.location.href='register.html'">Đăng ký
+                B1</button>
+              <button class="btn-outline" style="font-size:13px;padding:8px 20px;" onclick="window.location.href='register.html'">Tư vấn
+                miễn phí</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- B2 -->
+        <div class="cdc">
+          <div class="cdc-header" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">
+            <div class="cdc-badge" style="background:linear-gradient(135deg,#ec4899,#f472b6);">B2</div>
+            <div>
+              <h3 style="font-family:var(--font-heading);font-weight:900;font-size:22px;color:var(--blue-dark);">Tiếng
+                Đức Khá B2</h3>
+              <p style="color:var(--gray-600);font-size:14px;margin-top:4px;">Xử lý các chủ đề phức tạp trong học tập,
+                công việc và xã hội</p>
+              <div class="price-badge" style="margin-top:10px;">Lộ trình 50 buổi<small>3 tháng · Liên hệ để biết học
+                  phí</small></div>
+            </div>
+          </div>
+          <div class="cdc-body">
+            <div class="cdc-meta">
+              <div class="meta-chip">⏱️ 3 tháng</div>
+              <div class="meta-chip">📅 50 buổi</div>
+              <div class="meta-chip">🎯 Thành thạo B2</div>
+            </div>
+            <ul class="cdc-list">
+              <li>Mở rộng và đào sâu từ vựng, ngữ pháp để xử lý các chủ đề phức tạp hơn</li>
+              <li>Luyện đọc hiểu các văn bản dài, nắm ý chính và chi tiết trong nhiều dạng nội dung</li>
+              <li>Phát triển kỹ năng viết: trình bày quan điểm, viết bài luận ngắn, email học thuật/công việc</li>
+              <li>Luyện nghe – nói với các chủ đề đa dạng: môi trường làm việc, truyền thông, định hướng tương lai…</li>
+              <li>Tăng khả năng tranh luận, bày tỏ ý kiến và phản hồi trong hội thoại ở mức sâu hơn</li>
+            </ul>
+            <div class="cdc-goal">
+              <div class="cdc-goal-title">🎯 Mục tiêu đạt được</div>
+              <ul class="cdc-list" style="margin:0;">
+                <li>Diễn đạt ý kiến rõ ràng, logic và linh hoạt trong nhiều tình huống</li>
+                <li>Giao tiếp tự tin trong môi trường học tập, làm việc và xã hội</li>
+                <li>Sử dụng tiếng Đức tương đối thành thạo cả nói và viết</li>
+              </ul>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;background:#ec4899;"
+                onclick="window.location.href='register.html'">Đăng ký B2</button>
+              <button class="btn-outline" style="font-size:13px;padding:8px 20px;" onclick="window.location.href='register.html'">Tư vấn
+                miễn phí</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ÔN THI B1 + 1:1 -->
+        <div id="extra-courses">
+          <!-- ÔN THI -->
+          <div class="cdc">
+            <div class="cdc-header" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">
+              <div class="cdc-badge"
+                style="background:linear-gradient(135deg,#f59e0b,#fbbf24);font-size:20px;width:88px;height:88px;">
+                Ôn<br>thi</div>
+              <div>
+                <h3 style="font-family:var(--font-heading);font-weight:900;font-size:18px;color:var(--blue-dark);">Ôn
+                  thi B1 – Goethe & TELC</h3>
+                <p style="font-size:13px;color:var(--gray-600);margin-top:4px;">Tập trung làm bài, rèn kỹ năng sát đề
+                </p>
+              </div>
+            </div>
+            <div class="cdc-body">
+              <p class="cdc-desc">Khóa học tập trung củng cố kiến thức và rèn kỹ năng làm bài, giúp học viên tự tin bước
+                vào kỳ thi B1.</p>
+              <div style="margin-bottom:14px;">
+                <div style="font-size:12px;font-weight:700;color:#92400e;margin-bottom:8px;">GOETHE B1</div>
+                <ul class="cdc-list" style="margin:0;">
+                  <li>Làm quen cấu trúc đề thi (Lesen, Hören, Schreiben, Sprechen)</li>
+                  <li>Sửa bài viết chi tiết, nâng cấp cách diễn đạt</li>
+                  <li>Thi thử và chữa đề sát format thực tế</li>
+                </ul>
+              </div>
+              <div style="margin-bottom:18px;">
+                <div style="font-size:12px;font-weight:700;color:#92400e;margin-bottom:8px;">TELC B1</div>
+                <ul class="cdc-list" style="margin:0;">
+                  <li>Nắm rõ cấu trúc đề TELC và các dạng bài đặc trưng</li>
+                  <li>Luyện nói theo format thi TELC (đối thoại, thảo luận)</li>
+                  <li>Sửa lỗi cá nhân và cải thiện điểm yếu từng kỹ năng</li>
+                </ul>
+              </div>
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;background:#f59e0b;color:#78350f;"
+                onclick="window.location.href='register.html'">Đăng ký ôn thi</button>
+            </div>
+          </div>
+
+          <!-- TUTOR 1:1 -->
+          <div class="cdc">
+            <div class="cdc-header" style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);">
+              <div class="cdc-badge"
+                style="background:linear-gradient(135deg,#7c3aed,#a78bfa);font-size:22px;width:88px;height:88px;">1:1
+              </div>
+              <div>
+                <h3 style="font-family:var(--font-heading);font-weight:900;font-size:18px;color:var(--blue-dark);">Tutor
+                  1:1 – Học theo yêu cầu</h3>
+                <p style="font-size:13px;color:var(--gray-600);margin-top:4px;">Lộ trình riêng theo mục tiêu và trình độ
+                  cá nhân</p>
+              </div>
+            </div>
+            <div class="cdc-body">
+              <p class="cdc-desc">Khóa học được thiết kế riêng cho từng học viên, phù hợp với mục tiêu và trình độ cá
+                nhân.</p>
+              <ul class="cdc-list" style="margin-bottom:14px;">
+                <li>Xây dựng lộ trình riêng theo mục tiêu: giao tiếp, thi chứng chỉ, đi Đức, công việc…</li>
+                <li>Tập trung vào điểm yếu của học viên: phát âm, ngữ pháp, phản xạ nói, viết…</li>
+                <li>Linh hoạt nội dung theo tiến độ và khả năng tiếp thu của từng buổi</li>
+              </ul>
+              <div style="background:#f5f3ff;border-radius:10px;padding:14px;margin-bottom:18px;">
+                <div style="font-size:12px;font-weight:700;color:#6d28d9;margin-bottom:8px;">✨ ĐIỂM NỔI BẬT</div>
+                <ul class="cdc-list" style="margin:0;">
+                  <li>1 kèm 1 – chỉnh lỗi chi tiết, theo sát từng buổi</li>
+                  <li>Thời gian linh hoạt, dễ sắp xếp lịch học</li>
+                  <li>Tiến bộ nhanh do học đúng trọng tâm</li>
+                </ul>
+              </div>
+              <button class="btn-primary" style="font-size:13px;padding:10px 22px;background:#7c3aed;"
+                onclick="window.location.href='register.html'">Đăng ký Tutor 1:1</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:var(--gray-50);">
+      <div class="container" style="max-width:780px;">
+        <div class="section-header">
+          <h2 class="section-title">Câu hỏi về <span>khóa học</span></h2>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Học hình thức nào? Online hay offline? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">Deuzy dạy cả online và offline. Hình thức online qua Zoom rất linh hoạt về thời gian, phù
+            hợp cho học viên ở nhiều tỉnh thành khác nhau. Hãy liên hệ để biết thêm chi tiết về lịch học.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Học bao lâu thì có thể đạt B1? <span class="faq-arrow">▾</span>
+          </div>
+          <div class="faq-a">Từ người chưa biết tiếng Đức, học qua A1 → A2 → B1 mất khoảng 6–9 tháng nếu học đều đặn.
+            Nếu đã có nền tảng, khóa ôn thi B1 của Deuzy giúp bạn chuẩn bị kỳ thi trong thời gian ngắn hơn.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Học phí các khóa bao nhiêu? <span class="faq-arrow">▾</span>
+          </div>
+          <div class="faq-a">Học phí được cung cấp khi tư vấn trực tiếp, tùy theo hình thức học (nhóm hay 1:1), thời
+            lượng và nhu cầu của từng học viên. Hãy liên hệ để được báo giá chi tiết và miễn phí tư vấn lộ trình.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Khóa Tutor 1:1 phù hợp với ai? <span class="faq-arrow">▾</span>
+          </div>
+          <div class="faq-a">Tutor 1:1 phù hợp với những bạn có mục tiêu rõ ràng (thi chứng chỉ, đi Đức gấp, cải thiện
+            một kỹ năng cụ thể) và cần lộ trình cá nhân hóa. Đây cũng là lựa chọn tốt cho người bận rộn, muốn lịch học
+            linh hoạt.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Goethe B1 và TELC B1 khác nhau như thế nào? <span
+              class="faq-arrow">▾</span></div>
+          <div class="faq-a">Cả hai đều được công nhận rộng rãi. Goethe B1 do Goethe-Institut cấp, có uy tín học thuật
+            cao. TELC B1 phổ biến cho mục đích nghề nghiệp và nhập cư. Deuzy có khóa ôn thi cho cả hai, hãy tư vấn để
+            chọn phù hợp với mục tiêu.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== GERMANY ===================== -->
+  
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/logo_web/chinh1.png" alt="Deuzy Logo"
+            style="height: 35px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);">
+          <div class="footer-brand-desc">Tinh giản việc học – Tối đa kết quả. Deuzy đồng hành cùng bạn trên hành trình
+            chinh phục tiếng Đức và ước mơ.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 info@deuzy.vn<br>🏠 Việt Nam</div>
+        </div>
+        <div class="footer-col">
+          <h4>Khóa học</h4>
+          <ul>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Ôn thi Goethe/TELC</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tutor 1:1</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a onclick="window.location.href='germany.html'">Du học đại học</a></li>
+            <li><a onclick="window.location.href='germany.html'">Du học nghề</a></li>
+            <li><a onclick="window.location.href='germany.html'">Tư vấn visa</a></li>
+            <li><a onclick="window.location.href='register.html'">Tư vấn miễn phí</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a onclick="window.location.href='about.html'">Về Deuzy</a></li>
+            <li><a onclick="window.location.href='about.html'">Founder Khánh Linh</a></li>
+            <li><a onclick="window.location.href='recruit.html'">Tuyển dụng</a></li>
+            <li><a onclick="window.location.href='register.html'">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-bottom">
+        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
+        <div class="footer-socials">
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/youtobe.png" alt="YouTube" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 16px; height: 16px; object-fit: contain; "></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-box">
+      <div class="success-icon">🎉</div>
+      <div class="success-title">Đăng ký thành công!</div>
+      <p class="success-text">Cảm ơn bạn đã tin tưởng Deuzy! Tư vấn viên sẽ liên hệ với bạn trong vòng <strong>24
+          giờ</strong>.</p>
+      <button class="btn-primary" onclick="document.getElementById('success-modal').classList.remove('open')">Tuyệt vời!
+        →</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

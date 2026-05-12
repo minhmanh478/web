@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuzy – Deutsch Made Easy</title>
+  <link rel="icon" href="assets/logo_web/logo_no_name.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo_web/chinh.png" alt="Deuzy" style="height: 200px; width: auto; object-fit: contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="courses.html">Khóa học</a></li>
+      <li><a href="germany.html" class="active">Du học Đức</a></li>
+      <li><a href="recruit.html">Tuyển dụng</a></li>
+      <li><a href="register.html" class="nav-cta">Đăng ký</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav-overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">🏠 Trang chủ</a>
+    <a href="about.html" onclick="toggleMenu()">👩‍🏫 Giới thiệu</a>
+    <a href="courses.html" onclick="toggleMenu()">📚 Khóa học</a>
+    <a href="germany.html" class="active" onclick="toggleMenu()">🇩🇪 Du học Đức</a>
+    <a href="recruit.html" onclick="toggleMenu()">💼 Tuyển dụng</a>
+    <a href="register.html" onclick="toggleMenu()" class="mobile-nav-cta">🚀 Đăng ký tư vấn</a>
+  </div>
+
+<div class="page pt-nav" id="page-germany">
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><span onclick="window.location.href='index.html'">Trang chủ</span> / Du học Đức</div>
+        <h1
+          style="font-family:var(--font-heading);font-weight:900;font-size:clamp(26px,5vw,50px);color:var(--blue-dark);margin-bottom:12px;">
+          Du Học <span style="color:var(--blue);">Tại Đức</span></h1>
+        <p style="font-size:16px;color:var(--gray-600);max-width:600px;line-height:1.7;margin-bottom:26px;">Chọn du học
+          Đức không phải vì "trend", mà vì nó giải được nhiều bài toán rất thực tế. Deuzy hỗ trợ trọn gói từ học tiếng
+          đến đặt chân sang Đức.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn-primary" onclick="document.getElementById('reasons').scrollIntoView({behavior:'smooth'})">7
+            lý do chọn Đức ↓</button>
+          <button class="btn-outline" onclick="document.getElementById('paths').scrollIntoView({behavior:'smooth'})">ĐH
+            hay Nghề?</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 REASONS -->
+    <section id="reasons">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">7 lý do chọn <span>Du học Đức</span></h2>
+          <p class="section-sub">Nhìn thẳng vào lợi ích – Đức giải được nhiều bài toán thực tế cho người Việt.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;">
+          <div class="reason-card">
+            <div class="reason-num">01</div>
+            <div class="reason-title">💰 Gần như miễn học phí</div>
+            <div class="reason-desc">Hầu hết các trường công lập tại Đức học phí = 0 hoặc rất thấp (chỉ đóng phí hành
+              chính vài trăm euro/kỳ). So với Anh, Mỹ hay Úc thì đây là lợi thế cực lớn. Học nghề còn được hưởng lương.
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">02</div>
+            <div class="reason-title">🏆 Bằng cấp rất "cứng"</div>
+            <div class="reason-desc">Hệ thống giáo dục Đức nổi tiếng về tính thực tiễn, đặc biệt các ngành kỹ thuật, cơ
+              khí, IT, kinh tế. Học xong ra dễ làm được việc thật, không chỉ lý thuyết.</div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">03</div>
+            <div class="reason-title">💼 Cơ hội việc làm & định cư cao</div>
+            <div class="reason-desc">Đức đang thiếu lao động (đặc biệt kỹ thuật, điều dưỡng, IT). Sinh viên được ở lại
+              18 tháng sau tốt nghiệp để tìm việc. Có thể chuyển sang visa lao động và định cư lâu dài.</div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">04</div>
+            <div class="reason-title">⚖️ Được làm thêm hợp pháp</div>
+            <div class="reason-desc">Sinh viên quốc tế được làm thêm ~120 ngày/năm → đủ trang trải sinh hoạt nếu biết
+              cân đối chi tiêu hợp lý.</div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">05</div>
+            <div class="reason-title">🏠 Chi phí sống hợp lý</div>
+            <div class="reason-desc">So với các nước Tây Âu khác, chi phí ở Đức "dễ thở" hơn nhưng chất lượng sống vẫn
+              rất cao: giao thông, y tế, môi trường đều tốt.</div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">06</div>
+            <div class="reason-title">🌍 Môi trường quốc tế</div>
+            <div class="reason-desc">Bạn sẽ học cách sống tự lập, giao tiếp đa văn hoá và nâng trình ngoại ngữ cực nhanh
+              (đặc biệt tiếng Đức + tiếng Anh).</div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num">07</div>
+            <div class="reason-title">✈️ Du lịch châu Âu cực tiện</div>
+            <div class="reason-desc">Visa du học Đức = "vé đi cả châu Âu" nhờ khối Schengen. Không cần xin visa lại, chỉ
+              cần xách balo + đặt vé là đi. Di chuyển rất rẻ: tàu, bus, máy bay giá rẻ.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ĐẠI HỌC VS NGHỀ -->
+    <section id="paths" style="background:var(--gray-50);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Đại học hay <span>Học nghề?</span></h2>
+          <p class="section-sub">Bạn đang phân vân giữa 2 hướng đi phổ biến nhất tại Đức? Đây là so sánh để bạn chọn
+            đúng hướng.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+          <div class="path-card">
+            <div class="path-header" style="background:#dd0000;">
+              <div class="path-icon">🎓</div>
+              <div>
+                <div class="path-title">Du học Đại học</div>
+                <div class="path-sub">Bằng cấp giá trị cao, phát triển lâu dài</div>
+              </div>
+            </div>
+            <div class="path-body">
+              <ul class="features-list">
+                <li>
+                  <div class="feat-icon">👤</div>
+                  <div><strong>Phù hợp</strong>Học sinh có học lực khá – giỏi, muốn bằng cấp học thuật</div>
+                </li>
+                <li>
+                  <div class="feat-icon">💰</div>
+                  <div><strong>Học phí</strong>Gần như miễn phí tại trường công lập</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🗺️</div>
+                  <div><strong>Lộ trình</strong>Học dự bị (Studienkolleg) → vào đại học</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🌐</div>
+                  <div><strong>Tiếng Đức yêu cầu</strong>B2 – C1 (DSH hoặc TestDaF)</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🏆</div>
+                  <div><strong>Cơ hội</strong>Bằng cấp giá trị cao, dễ phát triển lâu dài, ở lại 18 tháng sau tốt nghiệp
+                  </div>
+                </li>
+              </ul>
+              <button class="btn-primary" style="margin-top:16px;width:100%;background:#dd0000;" onclick="window.location.href='register.html'">Tư vấn du học
+                Đại Học →</button>
+            </div>
+          </div>
+          <div class="path-card">
+            <div class="path-header" style="background:#ffce00; color:var(--blue-dark);">
+              <div class="path-icon">🛠️</div>
+              <div>
+                <div class="path-title">Du học Nghề (Ausbildung)</div>
+                <div class="path-sub" style="color:var(--blue-dark); opacity: 0.8;">Vừa học – vừa làm – có thu nhập</div>
+              </div>
+            </div>
+            <div class="path-body">
+              <ul class="features-list">
+                <li>
+                  <div class="feat-icon">👤</div>
+                  <div><strong>Phù hợp</strong>Muốn đi nhanh, tự lập sớm, có thu nhập ngay</div>
+                </li>
+                <li>
+                  <div class="feat-icon">💵</div>
+                  <div><strong>Lương</strong>~800–1.200€/tháng ngay trong quá trình học nghề</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🗺️</div>
+                  <div><strong>Lộ trình</strong>Tìm chỗ thực tập → ký hợp đồng → xin visa Ausbildung</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🌐</div>
+                  <div><strong>Tiếng Đức yêu cầu</strong>B1 (đủ điều kiện xin visa)</div>
+                </li>
+                <li>
+                  <div class="feat-icon">🏆</div>
+                  <div><strong>Cơ hội</strong>Ra trường có việc làm ngay, dễ định cư, hưởng lương trong khi học</div>
+                </li>
+              </ul>
+              <button class="btn-primary" style="margin-top:16px;width:100%;background:#ffce00;color:var(--blue-dark);"
+                onclick="window.location.href='register.html'">Tư vấn du học Nghề →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEUZY SUPPORT -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Deuzy đồng hành <span>từ A đến Z</span></h2>
+          <p class="section-sub">Cam kết rõ ràng – đồng hành đến khi bạn đặt chân sang Đức.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+          <div class="why-card">
+            <div class="why-icon">🗺️</div>
+            <div class="why-title">Tư vấn lộ trình</div>
+            <div class="why-desc">Tư vấn chọn lộ trình phù hợp – Đại học hoặc Ausbildung – dựa trên hoàn cảnh và mục
+              tiêu của bạn.</div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">📋</div>
+            <div class="why-title">Xử lý hồ sơ</div>
+            <div class="why-desc">Hỗ trợ chuẩn bị hồ sơ đầy đủ, chứng minh tài chính, dịch thuật công chứng các giấy tờ
+              cần thiết.</div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🎤</div>
+            <div class="why-title">Luyện phỏng vấn visa</div>
+            <div class="why-desc">Luyện tập trả lời phỏng vấn tại Đại sứ quán, chuẩn bị tâm lý và nội dung thật kỹ.
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🏫</div>
+            <div class="why-title">Kết nối trường & doanh nghiệp</div>
+            <div class="why-desc">Kết nối với trường đại học và doanh nghiệp tại Đức phù hợp với ngành nghề và mục tiêu
+              của bạn.</div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:36px;">
+          <button class="btn-primary" style="margin-right:12px;" onclick="window.location.href='register.html'">Đăng ký tư vấn miễn
+            phí</button>
+          <button class="btn-outline" onclick="window.location.href='courses.html'">Xem khóa học tiếng Đức</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== RECRUITMENT ===================== -->
+  
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/logo_web/chinh1.png" alt="Deuzy Logo"
+            style="height: 35px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);">
+          <div class="footer-brand-desc">Tinh giản việc học – Tối đa kết quả. Deuzy đồng hành cùng bạn trên hành trình
+            chinh phục tiếng Đức và ước mơ.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 info@deuzy.vn<br>🏠 Việt Nam</div>
+        </div>
+        <div class="footer-col">
+          <h4>Khóa học</h4>
+          <ul>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Ôn thi Goethe/TELC</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tutor 1:1</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a onclick="window.location.href='germany.html'">Du học đại học</a></li>
+            <li><a onclick="window.location.href='germany.html'">Du học nghề</a></li>
+            <li><a onclick="window.location.href='germany.html'">Tư vấn visa</a></li>
+            <li><a onclick="window.location.href='register.html'">Tư vấn miễn phí</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a onclick="window.location.href='about.html'">Về Deuzy</a></li>
+            <li><a onclick="window.location.href='about.html'">Founder Khánh Linh</a></li>
+            <li><a onclick="window.location.href='recruit.html'">Tuyển dụng</a></li>
+            <li><a onclick="window.location.href='register.html'">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-bottom">
+        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
+        <div class="footer-socials">
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/youtobe.png" alt="YouTube" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 16px; height: 16px; object-fit: contain; "></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-box">
+      <div class="success-icon">🎉</div>
+      <div class="success-title">Đăng ký thành công!</div>
+      <p class="success-text">Cảm ơn bạn đã tin tưởng Deuzy! Tư vấn viên sẽ liên hệ với bạn trong vòng <strong>24
+          giờ</strong>.</p>
+      <button class="btn-primary" onclick="document.getElementById('success-modal').classList.remove('open')">Tuyệt vời!
+        →</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

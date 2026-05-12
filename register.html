@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuzy – Deutsch Made Easy</title>
+  <link rel="icon" href="assets/logo_web/logo_no_name.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo_web/chinh.png" alt="Deuzy" style="height: 200px; width: auto; object-fit: contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="courses.html">Khóa học</a></li>
+      <li><a href="germany.html">Du học Đức</a></li>
+      <li><a href="recruit.html">Tuyển dụng</a></li>
+      <li><a href="register.html" class="active" class="nav-cta">Đăng ký</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-nav-overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">🏠 Trang chủ</a>
+    <a href="about.html" onclick="toggleMenu()">👩‍🏫 Giới thiệu</a>
+    <a href="courses.html" onclick="toggleMenu()">📚 Khóa học</a>
+    <a href="germany.html" onclick="toggleMenu()">🇩🇪 Du học Đức</a>
+    <a href="recruit.html" onclick="toggleMenu()">💼 Tuyển dụng</a>
+    <a href="register.html" class="active" onclick="toggleMenu()" class="mobile-nav-cta">🚀 Đăng ký tư vấn</a>
+  </div>
+
+<div class="page pt-nav" id="page-register">
+    <div class="register-hero">
+      
+      <h1>Đăng Ký <span style="color:var(--yellow);">Tư Vấn Miễn Phí</span></h1>
+      <p>Điền thông tin bên dưới – Deuzy sẽ liên hệ và tư vấn lộ trình phù hợp nhất với bạn!</p>
+      <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
+        <div
+          style="background:rgba(255,255,255,0.12);border-radius:12px;padding:14px 22px;text-align:center;min-width:110px;">
+          <div style="font-family:var(--font-heading);font-weight:900;font-size:26px;color:#fff;">24h</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.7);">Phản hồi</div>
+        </div>
+        <div
+          style="background:rgba(255,255,255,0.12);border-radius:12px;padding:14px 22px;text-align:center;min-width:110px;">
+          <div style="font-family:var(--font-heading);font-weight:900;font-size:26px;color:#fff;">100%</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.7);">Miễn phí</div>
+        </div>
+        <div
+          style="background:rgba(255,255,255,0.12);border-radius:12px;padding:14px 22px;text-align:center;min-width:110px;">
+          <div style="font-family:var(--font-heading);font-weight:900;font-size:26px;color:#fff;">1:1</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.7);">Cá nhân</div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Chọn <span>dịch vụ phù hợp</span></h2>
+        </div>
+        <div class="reg-options">
+          <div class="reg-option" onclick="selectOption(this,'Khóa học tiếng Đức')">
+            <div class="reg-option-icon">📚</div>
+            <div class="reg-option-title">Học tiếng Đức</div>
+            <div class="reg-option-desc">Các khóa A1 đến B2 và lớp 1:1</div>
+          </div>
+          <div class="reg-option" onclick="selectOption(this,'Ôn thi chứng chỉ')">
+            <div class="reg-option-icon">📝</div>
+            <div class="reg-option-title">Ôn thi chứng chỉ</div>
+            <div class="reg-option-desc">Goethe B1 hoặc TELC B1</div>
+          </div>
+          <div class="reg-option" onclick="selectOption(this,'Du học Đức')">
+            <div class="reg-option-icon">🎓</div>
+            <div class="reg-option-title">Du học Đức</div>
+            <div class="reg-option-desc">Đại học hoặc Ausbildung</div>
+          </div>
+          <div class="reg-option" onclick="selectOption(this,'Tư vấn tổng thể')">
+            <div class="reg-option-icon">🤝</div>
+            <div class="reg-option-title">Tư vấn tổng thể</div>
+            <div class="reg-option-desc">Chưa biết bắt đầu từ đâu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;">
+          <div
+            style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--blue-light));display:flex;align-items:center;justify-content:center;font-size:20px;">
+            📋</div>
+          <div>
+            <div class="form-title">Thông tin đăng ký</div>
+            <div class="form-subtitle">Vui lòng điền đầy đủ để Deuzy tư vấn chính xác nhất cho bạn!</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Họ và tên *</label><input type="text" id="r-name" placeholder="Nguyễn Thị A">
+          </div>
+          <div class="form-group"><label>Số điện thoại *</label><input type="tel" id="r-phone"
+              placeholder="0912 345 678"></div>
+        </div>
+        <div class="form-group"><label>Email *</label><input type="email" id="r-email" placeholder="email@example.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Dịch vụ quan tâm</label>
+            <select id="r-service">
+              <option value="">-- Chọn dịch vụ --</option>
+              <option>Khóa học tiếng Đức (A1–B2)</option>
+              <option>Ôn thi Goethe B1</option>
+              <option>Ôn thi TELC B1</option>
+              <option>Tutor 1:1 cá nhân</option>
+              <option>Du học đại học tại Đức</option>
+              <option>Du học nghề (Ausbildung)</option>
+              <option>Tư vấn tổng thể</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Trình độ tiếng Đức hiện tại</label>
+            <select id="r-level">
+              <option value="">-- Chọn trình độ --</option>
+              <option>Chưa biết tiếng Đức</option>
+              <option>A1 – Mới bắt đầu</option>
+              <option>A2</option>
+              <option>B1</option>
+              <option>B2</option>
+              <option>C1 trở lên</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Mục tiêu của bạn</label>
+          <select id="r-goal">
+            <option value="">-- Chọn mục tiêu --</option>
+            <option>Học tiếng Đức để giao tiếp</option>
+            <option>Thi chứng chỉ Goethe/TELC</option>
+            <option>Du học đại học tại Đức</option>
+            <option>Du học nghề (Ausbildung)</option>
+            <option>Làm việc tại Đức</option>
+            <option>Định cư lâu dài</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Câu hỏi hoặc ghi chú thêm</label><textarea id="r-message"
+            placeholder="Chia sẻ thêm về mục tiêu của bạn để Deuzy chuẩn bị tư vấn tốt hơn..."></textarea></div>
+        <div
+          style="background:var(--gray-50);border-radius:10px;padding:14px;margin-bottom:18px;font-size:13px;color:var(--gray-600);display:flex;align-items:flex-start;gap:10px;">
+          <span>🔒</span><span>Thông tin của bạn được bảo mật. Deuzy sẽ liên hệ trong 24 giờ làm việc.</span>
+        </div>
+        <button class="form-submit" onclick="submitRegister()">🚀 Gửi đăng ký tư vấn miễn phí</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cách khác để <span>liên hệ Deuzy</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon"><img src="assets/icons/zalo.png" alt="Phone" style="width: 38px; height: 38px; object-fit: contain;"></div>
+            <div class="contact-title">Zalo / Điện thoại</div>
+            <div class="contact-val"><a href="#">Liên hệ tư vấn viên</a><br>Giờ làm việc: 8:00–21:00</div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><img src="assets/icons/gmail.png" alt="Email" style="width: 38px; height: 38px; object-fit: contain;"></div>
+            <div class="contact-title">Email</div>
+            <div class="contact-val"><a href="mailto:info@deuzy.vn">info@deuzy.vn</a><br>Phản hồi trong 24 giờ</div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 38px; height: 38px; object-fit: contain;"></div>
+            <div class="contact-title">Facebook</div>
+            <div class="contact-val"><a href="#">Deuzy – Deutsch Made Easy</a><br>Cộng đồng học tiếng Đức</div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 38px; height: 38px; object-fit: contain;"></div>
+            <div class="contact-title">TikTok</div>
+            <div class="contact-val"><a href="#">@deuzy.vn</a><br>Video giải trí + học tiếng Đức</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/logo_web/chinh1.png" alt="Deuzy Logo"
+            style="height: 35px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);">
+          <div class="footer-brand-desc">Tinh giản việc học – Tối đa kết quả. Deuzy đồng hành cùng bạn trên hành trình
+            chinh phục tiếng Đức và ước mơ.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 info@deuzy.vn<br>🏠 Việt Nam</div>
+        </div>
+        <div class="footer-col">
+          <h4>Khóa học</h4>
+          <ul>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức A2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B1</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tiếng Đức B2</a></li>
+            <li><a onclick="window.location.href='courses.html'">Ôn thi Goethe/TELC</a></li>
+            <li><a onclick="window.location.href='courses.html'">Tutor 1:1</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dịch vụ</h4>
+          <ul>
+            <li><a onclick="window.location.href='germany.html'">Du học đại học</a></li>
+            <li><a onclick="window.location.href='germany.html'">Du học nghề</a></li>
+            <li><a onclick="window.location.href='germany.html'">Tư vấn visa</a></li>
+            <li><a onclick="window.location.href='register.html'">Tư vấn miễn phí</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a onclick="window.location.href='about.html'">Về Deuzy</a></li>
+            <li><a onclick="window.location.href='about.html'">Founder Khánh Linh</a></li>
+            <li><a onclick="window.location.href='recruit.html'">Tuyển dụng</a></li>
+            <li><a onclick="window.location.href='register.html'">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-bottom">
+        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
+        <div class="footer-socials">
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/youtobe.png" alt="YouTube" style="width: 16px; height: 16px; object-fit: contain; "></a>
+          <a href="index.html" class="social-btn" style="text-decoration:none;"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 16px; height: 16px; object-fit: contain; "></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-box">
+      <div class="success-icon">🎉</div>
+      <div class="success-title">Đăng ký thành công!</div>
+      <p class="success-text">Cảm ơn bạn đã tin tưởng Deuzy! Tư vấn viên sẽ liên hệ với bạn trong vòng <strong>24
+          giờ</strong>.</p>
+      <button class="btn-primary" onclick="document.getElementById('success-modal').classList.remove('open')">Tuyệt vời!
+        →</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
