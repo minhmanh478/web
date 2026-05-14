@@ -37,6 +37,9 @@ body {
   color: #26314c;
   background: #fff;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
 }
 
 /* ===== NAV ===== */
@@ -206,6 +209,7 @@ nav {
 /* ===== PAGE ===== */
 .page {
   animation: pageIn .4s ease both;
+  flex: 1 0 auto;
 }
 
 @keyframes pageIn {
@@ -470,7 +474,7 @@ section {
 /* ===== NEW HERO ===== */
 .hero-new {
   position: relative;
-  min-height: 800px;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   background-color: #f8fafc;
@@ -510,6 +514,7 @@ section {
   margin: 0 auto;
   padding-left: 100px; /* chừa khoảng cách cho cột cờ */
   padding-right: 40px;
+  transform: translateY(-70px); /* Kéo nội dung lên trên một chút */
 }
 
 .hero-new-left {
