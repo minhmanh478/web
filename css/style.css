@@ -575,7 +575,7 @@ section {
 .hero-portrait {
   position: absolute;
   bottom: -80px;
-  right: -90px;
+  right: -40px;
   height: 700px;
   object-fit: contain;
   z-index: 3;
@@ -604,7 +604,7 @@ section {
 .hero-card-float {
   position: absolute;
   bottom: 60px;
-  right: 320px;
+  right: 310px;
   background: #fff;
   padding: 30px;
   border-radius: 20px;
@@ -798,6 +798,14 @@ section {
   padding: 26px;
   box-shadow: var(--shadow);
   border: 1.5px solid var(--gray-100);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+
+.testi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue);
 }
 
 .testi-stars {
@@ -1360,6 +1368,14 @@ section {
   box-shadow: var(--shadow);
   text-align: center;
   border: 1.5px solid var(--gray-100);
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue);
 }
 
 .contact-icon {
