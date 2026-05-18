@@ -413,9 +413,10 @@ section {
 
 .page-hero {
   background: linear-gradient(160deg, #eff6ff 0%, #f0f9ff 50%, #fff 100%);
-  padding: 100px 5% 60px;
+  padding: 40px 5% 20px;
   position: relative;
   overflow: hidden;
+  min-height: 320px;
 }
 
 .page-hero::after {
@@ -609,7 +610,7 @@ section {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  width: 420px;
+  width: 450px;
   z-index: 2;
 }
 .hero-card-float p {

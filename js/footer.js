@@ -7,7 +7,7 @@ const footerHTML = `
             style="height: 35px; width: auto; object-fit: contain; margin-bottom: 12px; filter: brightness(0) invert(1);">
           <div class="footer-brand-desc">Tinh giản việc học – Tối đa kết quả. Deuzy đồng hành cùng bạn trên hành trình
             chinh phục tiếng Đức và ước mơ.</div>
-          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 info@deuzy.vn<br>🏠 Việt Nam</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">📧 Deuzy.Off@gmail.com<br>🇻🇳 Việt Nam</div>
         </div>
         <div class="footer-col">
           <h4>Khóa học</h4>
@@ -41,10 +41,9 @@ const footerHTML = `
       </div>
       <hr class="footer-hr">
       <div class="footer-bottom">
-        <div>© 2025 Deuzy – Deutsch Made Easy by Lê Minh Mạnh.</div>
+        <div>© 2026 Deuzy – Deutsch Made Easy.</div>
         <div class="footer-socials">
           <a href="https://www.facebook.com/profile.php?id=61589723679771" class="social-btn" target="_blank" style="text-decoration:none;"><img src="assets/icons/facebook.png" alt="Facebook" style="width: 16px; height: 16px; object-fit: contain; "></a>
-          <a href="#" class="social-btn" target="_blank" style="text-decoration:none;"><img src="assets/icons/youtobe.png" alt="YouTube" style="width: 16px; height: 16px; object-fit: contain; "></a>
           <a href="https://www.tiktok.com/@deuzy.de" class="social-btn" target="_blank" style="text-decoration:none;"><img src="assets/icons/tiktok.png" alt="TikTok" style="width: 16px; height: 16px; object-fit: contain; "></a>
         </div>
       </div>
